@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5711A62926AEECDD00570746 /* VTVector2.h in Headers */ = {isa = PBXBuildFile; fileRef = 5711A62726AEECDD00570746 /* VTVector2.h */; };
+		5711A62A26AEECDD00570746 /* VTVector2.m in Sources */ = {isa = PBXBuildFile; fileRef = 5711A62826AEECDD00570746 /* VTVector2.m */; };
+		5711A62C26AEF0FC00570746 /* VTVector2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5711A62B26AEF0FC00570746 /* VTVector2Tests.m */; };
 		5728961B26AEE30A00DAB85A /* Vectore.docc in Sources */ = {isa = PBXBuildFile; fileRef = 5728961A26AEE30A00DAB85A /* Vectore.docc */; };
 		5728962126AEE30A00DAB85A /* Vectore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5728961626AEE30A00DAB85A /* Vectore.framework */; };
-		5728962626AEE30A00DAB85A /* VectoreTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5728962526AEE30A00DAB85A /* VectoreTests.m */; };
 		5728962726AEE30A00DAB85A /* Vectore.h in Headers */ = {isa = PBXBuildFile; fileRef = 5728961926AEE30A00DAB85A /* Vectore.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -24,11 +26,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5711A62726AEECDD00570746 /* VTVector2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VTVector2.h; sourceTree = "<group>"; };
+		5711A62826AEECDD00570746 /* VTVector2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VTVector2.m; sourceTree = "<group>"; };
+		5711A62B26AEF0FC00570746 /* VTVector2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VTVector2Tests.m; sourceTree = "<group>"; };
 		5728961626AEE30A00DAB85A /* Vectore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Vectore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5728961926AEE30A00DAB85A /* Vectore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Vectore.h; sourceTree = "<group>"; };
 		5728961A26AEE30A00DAB85A /* Vectore.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = Vectore.docc; sourceTree = "<group>"; };
 		5728962026AEE30A00DAB85A /* VectoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VectoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5728962526AEE30A00DAB85A /* VectoreTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VectoreTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +54,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5711A62626AEEC8B00570746 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5711A62726AEECDD00570746 /* VTVector2.h */,
+				5711A62826AEECDD00570746 /* VTVector2.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		5728960C26AEE30A00DAB85A = {
 			isa = PBXGroup;
 			children = (
@@ -71,6 +84,7 @@
 		5728961826AEE30A00DAB85A /* Vectore */ = {
 			isa = PBXGroup;
 			children = (
+				5711A62626AEEC8B00570746 /* Model */,
 				5728961926AEE30A00DAB85A /* Vectore.h */,
 				5728961A26AEE30A00DAB85A /* Vectore.docc */,
 			);
@@ -80,7 +94,7 @@
 		5728962426AEE30A00DAB85A /* VectoreTests */ = {
 			isa = PBXGroup;
 			children = (
-				5728962526AEE30A00DAB85A /* VectoreTests.m */,
+				5711A62B26AEF0FC00570746 /* VTVector2Tests.m */,
 			);
 			path = VectoreTests;
 			sourceTree = "<group>";
@@ -92,6 +106,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5711A62926AEECDD00570746 /* VTVector2.h in Headers */,
 				5728962726AEE30A00DAB85A /* Vectore.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -194,6 +209,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5728961B26AEE30A00DAB85A /* Vectore.docc in Sources */,
+				5711A62A26AEECDD00570746 /* VTVector2.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,7 +217,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5728962626AEE30A00DAB85A /* VectoreTests.m in Sources */,
+				5711A62C26AEF0FC00570746 /* VTVector2Tests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
