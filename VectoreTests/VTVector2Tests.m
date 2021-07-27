@@ -41,4 +41,20 @@
     // no teardown needed
 }
 
+- (void)testSquaredLengthIs2500 {
+    // setup
+    VTVector2 *aVector = [[VTVector2 alloc] initWithX:30 andY:40];
+    // test
+    XCTAssertEqual([aVector squaredLength], 2500);
+    // no teardown needed
+}
+
+- (void)testLengthIs50 {
+    // setup
+    VTVector2 *aVector = [[VTVector2 alloc] initWithX:30 andY:40];
+    // test
+    XCTAssertEqual([aVector length], 50);
+    // no teardown needed
+}
+
 @end

@@ -23,15 +23,25 @@
     return self;
 }
 
-- (double) squaredDistanceTo:(VTVector2 *)toVector {
+- (double)squaredDistanceTo:(VTVector2 *)toVector {
     double diffX = self.x - toVector.x;
     double diffY = self.y - toVector.y;
     return (diffX * diffX) + (diffY * diffY);
 }
 
-- (double) distanceTo:(VTVector2 *)toVector {
+- (double)distanceTo:(VTVector2 *)toVector {
     double squaredDistance = [self squaredDistanceTo:toVector];
     return sqrt(squaredDistance);
+}
+
+- (double)squaredLength {
+    VTVector2 *origin = [[VTVector2 alloc] init];
+    return [self squaredDistanceTo:origin];
+}
+
+- (double)length {
+    VTVector2 *origin = [[VTVector2 alloc] init];
+    return [self distanceTo:origin];
 }
 
 // Beautiful description for printing object with NSLog :D

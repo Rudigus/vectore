@@ -20,6 +20,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (double)distanceTo:(VTVector2 *)toVector;
 
+- (double)squaredLength;
+
+- (double)length;
+
 - (NSString *)description;
 
 @end
