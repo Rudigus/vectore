@@ -23,6 +23,17 @@
     return self;
 }
 
+- (double) squaredDistanceTo:(VTVector2 *)toVector {
+    double diffX = self.x - toVector.x;
+    double diffY = self.y - toVector.y;
+    return (diffX * diffX) + (diffY * diffY);
+}
+
+- (double) distanceTo:(VTVector2 *)toVector {
+    double squaredDistance = [self squaredDistanceTo:toVector];
+    return sqrt(squaredDistance);
+}
+
 // Beautiful description for printing object with NSLog :D
 - (NSString *)description {
     return [NSString stringWithFormat:@"(%.2lf, %.2lf)", self.x, self.y];

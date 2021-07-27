@@ -23,4 +23,22 @@
     // no teardown needed
 }
 
+- (void)testSquaredDistanceIs100 {
+    // setup
+    VTVector2 *aVector = [[VTVector2 alloc] initWithX:10 andY:10];
+    VTVector2 *anotherVector = [[VTVector2 alloc] initWithX:16 andY:18];
+    // test
+    XCTAssertEqual([aVector squaredDistanceTo:anotherVector], 100);
+    // no teardown needed
+}
+
+- (void)testSquaredDistanceIs10 {
+    // setup
+    VTVector2 *aVector = [[VTVector2 alloc] initWithX:10 andY:10];
+    VTVector2 *anotherVector = [[VTVector2 alloc] initWithX:16 andY:18];
+    // test
+    XCTAssertEqual([aVector distanceTo:anotherVector], 10);
+    // no teardown needed
+}
+
 @end
