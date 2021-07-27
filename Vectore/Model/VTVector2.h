@@ -24,7 +24,13 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (double)length;
 
+- (VTVector2 *)multiplyByScalar:(double)aScalar;
+
+- (VTVector2 *)divideByScalar:(double)aScalar;
+
 - (NSString *)description;
+
+- (BOOL)isEqual:(id)object;
 
 @end
 

@@ -44,9 +44,31 @@
     return [self distanceToVector:origin];
 }
 
+- (VTVector2 *)multiplyByScalar:(double)aScalar {
+    double newX = self.x * aScalar;
+    double newY = self.y * aScalar;
+    return [[VTVector2 alloc] initWithX:newX andY:newY];
+}
+
+- (VTVector2 *)divideByScalar:(double)aScalar {
+    double newX = self.x / aScalar;
+    double newY = self.y / aScalar;
+    return [[VTVector2 alloc] initWithX:newX andY:newY];
+}
+
 // Beautiful description for printing object with NSLog :D
 - (NSString *)description {
     return [NSString stringWithFormat:@"(%.2lf, %.2lf)", self.x, self.y];
+}
+
+// Equality checker
+- (BOOL)isEqual:(id)object {
+    BOOL result = NO;
+    if ([object isKindOfClass:[self class]]) {
+        VTVector2 *vector = (VTVector2 *)object;
+        result = self.x == vector.x && self.y == vector.y;
+    }
+    return result;
 }
 
 @end
