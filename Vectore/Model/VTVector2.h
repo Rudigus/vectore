@@ -16,9 +16,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (instancetype)initWithX:(double)x andY:(double)y NS_DESIGNATED_INITIALIZER;
 
-- (double)squaredDistanceTo:(VTVector2 *)toVector;
+- (double)squaredDistanceToVector:(VTVector2 *)aVector;
 
-- (double)distanceTo:(VTVector2 *)toVector;
+- (double)distanceToVector:(VTVector2 *)aVector;
 
 - (double)squaredLength;
 

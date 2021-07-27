@@ -16,28 +16,28 @@
 
 - (void)testDescriptionIsInCorrectFormat {
     // setup
-    VTVector2 *vector = [[VTVector2 alloc] init];
-    NSString *description = [NSString stringWithFormat:@"%@", vector];
+    VTVector2 *aVector = [[VTVector2 alloc] init];
+    NSString *description = [NSString stringWithFormat:@"%@", aVector];
     // test
     XCTAssertTrue([description isEqualToString:@"(0.00, 0.00)"]);
     // no teardown needed
 }
 
-- (void)testSquaredDistanceIs100 {
+- (void)testSquaredDistanceToVectorIs100 {
     // setup
     VTVector2 *aVector = [[VTVector2 alloc] initWithX:10 andY:10];
     VTVector2 *anotherVector = [[VTVector2 alloc] initWithX:16 andY:18];
     // test
-    XCTAssertEqual([aVector squaredDistanceTo:anotherVector], 100);
+    XCTAssertEqual([aVector squaredDistanceToVector:anotherVector], 100);
     // no teardown needed
 }
 
-- (void)testSquaredDistanceIs10 {
+- (void)testDistanceToVectorIs10 {
     // setup
     VTVector2 *aVector = [[VTVector2 alloc] initWithX:10 andY:10];
     VTVector2 *anotherVector = [[VTVector2 alloc] initWithX:16 andY:18];
     // test
-    XCTAssertEqual([aVector distanceTo:anotherVector], 10);
+    XCTAssertEqual([aVector distanceToVector:anotherVector], 10);
     // no teardown needed
 }
 
