@@ -54,15 +54,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		5711A62626AEEC8B00570746 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				5711A62726AEECDD00570746 /* VTVector2.h */,
-				5711A62826AEECDD00570746 /* VTVector2.m */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
 		5728960C26AEE30A00DAB85A = {
 			isa = PBXGroup;
 			children = (
@@ -84,7 +75,8 @@
 		5728961826AEE30A00DAB85A /* Vectore */ = {
 			isa = PBXGroup;
 			children = (
-				5711A62626AEEC8B00570746 /* Model */,
+				5711A62726AEECDD00570746 /* VTVector2.h */,
+				5711A62826AEECDD00570746 /* VTVector2.m */,
 				5728961926AEE30A00DAB85A /* Vectore.h */,
 				5728961A26AEE30A00DAB85A /* Vectore.docc */,
 			);
