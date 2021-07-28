@@ -11,6 +11,6 @@ Pod::Spec.new do |spec|
   spec.license      = "MIT"
   spec.author       = { "Rudigus" => "rodrigo.matos9@hotmail.com" }
   spec.source       = { :git => "https://github.com/Rudigus/vectore.git", :tag => "#{spec.version}" }
-  spec.source_files = "Vectore"
+  spec.source_files = "Vectore/*"
 
 end
