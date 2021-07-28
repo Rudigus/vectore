@@ -14,5 +14,5 @@ FOUNDATION_EXPORT double VectoreVersionNumber;
 FOUNDATION_EXPORT const unsigned char VectoreVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <Vectore/PublicHeader.h>
-
+#import <Vectore/VTVector2.h>
 
