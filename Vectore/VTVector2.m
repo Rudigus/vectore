@@ -56,12 +56,10 @@
     return [[VTVector2 alloc] initWithX:newX andY:newY];
 }
 
-// Beautiful description for printing object with NSLog :D
 - (NSString *)description {
     return [NSString stringWithFormat:@"(%.2lf, %.2lf)", self.x, self.y];
 }
 
-// Equality checker
 - (BOOL)isEqual:(id)object {
     BOOL result = NO;
     if ([object isKindOfClass:[self class]]) {
