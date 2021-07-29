@@ -9,9 +9,13 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+/// 2D vector type to represent and work with vectorial quantities, like velocity.
 @interface VTVector2 : NSObject
 
+/// the vector's x-coordinate.
 @property double x;
+
+/// the vector's y-coordinate.
 @property double y;
 
 /// Initializes a vector with a coordinate.
