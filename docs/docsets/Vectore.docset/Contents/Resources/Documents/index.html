@@ -59,9 +59,31 @@
         <section>
           <section class="section">
             
-            <h1 id='vectore' class='heading'>vectore</h1>
+            <h1 id='vectore' class='heading'>Vectore</h1>
 
-<p>A swift / objective-c vector framework</p>
+<p>Vectore is a vector framework written in ObjC, which can prove useful in simulations, games and more. Currently, it has support for only one class, VTVector2, which lets you work with two dimensional vectors.</p>
+<h2 id='installation' class='heading'>Installation</h2>
+
+<p>This framework is available on CocoaPods. To install it, you can run</p>
+<pre class="highlight shell"><code><span class="nb">sudo </span>gem <span class="nb">install </span>cocoapods
+</code></pre>
+
+<p>After that, you will need a Podfile in your project. Go to your project directory and run</p>
+<pre class="highlight shell"><code>pod init
+</code></pre>
+
+<p>Add Vectore to your project dependencies by adding this line to your target in the Podfile</p>
+<pre class="highlight plaintext"><code>pod 'Vectore'
+</code></pre>
+
+<p>and running</p>
+<pre class="highlight shell"><code>pod <span class="nb">install</span>
+</code></pre>
+
+<p>That&rsquo;s it! Now you can use Vectore in your project. One thing to note is that you now need to open your app&rsquo;s .xcworkspace instead of the .xcodeproj when working on the app, because of the CocoaPods integration.</p>
+<h2 id='documentation' class='heading'>Documentation</h2>
+
+<p>The full documentation can be found <a href="https://rudigus.github.io/vectore/">here</a>.</p>
 
           </section>
         </section>
