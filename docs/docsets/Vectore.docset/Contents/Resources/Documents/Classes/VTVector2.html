@@ -17,7 +17,7 @@
     <a title="VTVector2 Class Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html">Vectore 0.0.1 Docs</a> (100% documented)</p>
+        <p><a href="../index.html">Vectore 0.0.2 Docs</a> (100% documented)</p>
         <p class="header-right">
           <form role="search" action="../search.json">
             <input type="text" placeholder="Search documentation" data-typeahead>
@@ -428,6 +428,172 @@ Can be used for comparing lengths.</p>
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/c:objc(cs)VTVector2(im)normalized"></a>
+                    <a name="//apple_ref/objc/Method/-normalized" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)VTVector2(im)normalized">-normalized</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the vector with its length equal to 1, preserving the direction. It can be used, for example, to simplify some operations when you only need the direction of the vector.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n">VTVector2</span> <span class="o">*</span><span class="p">)</span><span class="n">normalized</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)VTVector2(im)dotProductWithVector:"></a>
+                    <a name="//apple_ref/objc/Method/-dotProductWithVector:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)VTVector2(im)dotProductWithVector:">-dotProductWithVector:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the dot product of two vectors. It can be used, for example, to compute the angle between two vectors.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">double</span><span class="p">)</span><span class="nf">dotProductWithVector</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">VTVector2</span> <span class="o">*</span><span class="p">)</span><span class="nv">aVector</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>aVector</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>a vector with which the dot product will be calculated</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)VTVector2(im)perpDotProductWithVector:"></a>
+                    <a name="//apple_ref/objc/Method/-perpDotProductWithVector:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)VTVector2(im)perpDotProductWithVector:">-perpDotProductWithVector:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the perp dot product of two vectors. The perp dot product is the dot product of the first vector rotated by 90 degrees counterclockwise and the second vector.
+Is related to and might be considered the cross product of 2D vectors extended to 3D.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">double</span><span class="p">)</span><span class="nf">perpDotProductWithVector</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">VTVector2</span> <span class="o">*</span><span class="p">)</span><span class="nv">aVector</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>aVector</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>a vector with which the perp dot product will be calculated</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)VTVector2(im)signedAngleToVector:"></a>
+                    <a name="//apple_ref/objc/Method/-signedAngleToVector:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)VTVector2(im)signedAngleToVector:">-signedAngleToVector:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the signed angle, in radians, from the vector to another vector.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">double</span><span class="p">)</span><span class="nf">signedAngleToVector</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">VTVector2</span> <span class="o">*</span><span class="p">)</span><span class="nv">aVector</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>aVector</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>a vector to which the signed angle will be calculated</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/c:objc(cs)VTVector2(im)description"></a>
                     <a name="//apple_ref/objc/Method/-description" class="dashAnchor"></a>
                     <a class="token" href="#/c:objc(cs)VTVector2(im)description">-description</a>
@@ -503,7 +669,7 @@ Can be used for comparing lengths.</p>
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2021 <a class="link" href="https://github.com/Rudigus/vectore" target="_blank" rel="external">Rudigus</a>. All rights reserved. (Last updated: 2021-07-29)</p>
+          <p>&copy; 2021 <a class="link" href="https://github.com/Rudigus/vectore" target="_blank" rel="external">Rudigus</a>. All rights reserved. (Last updated: 2021-07-30)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.7</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
