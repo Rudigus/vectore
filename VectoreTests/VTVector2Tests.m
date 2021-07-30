@@ -91,4 +91,39 @@
     // no teardown needed
 }
 
+- (void)testNormalized {
+    // setup
+    VTVector2 *aVector = [[VTVector2 alloc] initWithX:10 andY:0];
+    // test
+    XCTAssertEqualObjects([aVector normalized], [[VTVector2 alloc] initWithX:1 andY:0]);
+    // no teardown needed
+}
+
+- (void)testDotProductToVectorIs5 {
+    // setup
+    VTVector2 *aVector = [[VTVector2 alloc] initWithX:1 andY:2];
+    VTVector2 *anotherVector = [[VTVector2 alloc] initWithX:3 andY:1];
+    // test
+    XCTAssertEqual([aVector dotProductWithVector:anotherVector], 5);
+    // no teardown needed
+}
+
+- (void)testPerpDotProductToVectorIsNegative5 {
+    // setup
+    VTVector2 *aVector = [[VTVector2 alloc] initWithX:1 andY:2];
+    VTVector2 *anotherVector = [[VTVector2 alloc] initWithX:3 andY:1];
+    // test
+    XCTAssertEqual([aVector perpDotProductWithVector:anotherVector], -5);
+    // no teardown needed
+}
+
+- (void)testSignedAngleToVectorIsHalfPi {
+    // setup
+    VTVector2 *aVector = [[VTVector2 alloc] initWithX:1 andY:0];
+    VTVector2 *anotherVector = [[VTVector2 alloc] initWithX:0 andY:1];
+    // test
+    XCTAssertEqual([aVector signedAngleToVector:anotherVector], M_PI / 2);
+    // no teardown needed
+}
+
 @end

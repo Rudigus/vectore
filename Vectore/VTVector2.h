@@ -47,6 +47,22 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param aScalar a scalar used to divide the vector's x and y coordinates
 - (VTVector2 *)divideByScalar:(double)aScalar;
 
+/// Returns the vector with its length equal to 1, preserving the direction. It can be used, for example, to simplify some operations when you only need the direction of the vector.
+- (VTVector2 *)normalized;
+
+/// Returns the dot product of two vectors. It can be used, for example, to compute the angle between two vectors.
+/// @param aVector a vector with which the dot product will be calculated
+- (double)dotProductWithVector:(VTVector2 *)aVector;
+
+/// Returns the perp dot product of two vectors. The perp dot product is the dot product of the first vector rotated by 90 degrees counterclockwise and the second vector.
+/// Is related to and might be considered the cross product of 2D vectors extended to 3D.
+/// @param aVector a vector with which the perp dot product will be calculated
+- (double)perpDotProductWithVector:(VTVector2 *)aVector;
+
+/// Returns the signed angle, in radians, from the vector to another vector.
+/// @param aVector a vector to which the signed angle will be calculated
+- (double)signedAngleToVector:(VTVector2 *)aVector;
+
 /// Returns a string representation of the vector. Useful for printing the vector on the screen.
 - (NSString *)description;
 

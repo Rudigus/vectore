@@ -56,6 +56,22 @@
     return [[VTVector2 alloc] initWithX:newX andY:newY];
 }
 
+- (VTVector2 *)normalized {
+    return [self divideByScalar:[self length]];
+}
+
+- (double)dotProductWithVector:(VTVector2 *)aVector {
+    return self.x * aVector.x + self.y * aVector.y;
+}
+
+- (double)perpDotProductWithVector:(VTVector2 *)aVector {
+    return self.x * aVector.y - self.y * aVector.x;
+}
+
+- (double)signedAngleToVector:(VTVector2 *)aVector {
+    return atan2([self perpDotProductWithVector:aVector], [self dotProductWithVector:aVector]);
+}
+
 - (NSString *)description {
     return [NSString stringWithFormat:@"(%.2lf, %.2lf)", self.x, self.y];
 }
